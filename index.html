@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Workout Tracker</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Table</h1>
+		<table id="2024-01-08">
+			<thead>
+				<tr>
+					<td contentEditable=true colspan=100 style="background-color: #fff">2024-01-28</td>
+				</tr>
+				<tr>
+					<th>Exercise</th>
+					<th>Load</th>
+					<th>Sets</th>
+					<th>Reps</th>
+					<th>Rest</th>
+					<th>Notes</th>
+					<th colspan=4 style="width: 10rem">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td contentEditable=true>Squat</td>
+					<td contentEditable=true>135</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>focus on brace and thoracic</td>
+					<td class="hasBtn"><button class="mUpRowBtn">🠕</button></td>
+					<td class="hasBtn"><button class="mDoRowBtn">🠗</button></td>
+					<td class="hasBtn"><button class="delRowBtn">-</button></td>
+					<td class="hasBtn"><button class="swpRowBtn">⇅</button></td>
+				</tr>
+				<tr>
+					<td contentEditable=true>Bench</td>
+					<td contentEditable=true>95</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>scapula</td>
+					<td class="hasBtn"><button class="mUpRowBtn">🠕</button></td>
+					<td class="hasBtn"><button class="mDoRowBtn">🠗</button></td>
+					<td class="hasBtn"><button class="delRowBtn">-</button></td>
+					<td class="hasBtn"><button class="swpRowBtn">⇅</button></td>
+				</tr>
+				<tr>
+					<td contentEditable=true>Row</td>
+					<td contentEditable=true>95</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>5</td>
+					<td contentEditable=true>fixed lower back, pull with elbows</td>
+					<td class="hasBtn"><button class="mUpRowBtn">🠕</button></td>
+					<td class="hasBtn"><button class="mDoRowBtn">🠗</button></td>
+					<td class="hasBtn"><button class="delRowBtn">-</button></td>
+					<td class="hasBtn"><button class="swpRowBtn">⇅</button></td>
+				</tr>
+				<tr>
+					<td contentEditable=true>&nbsp;</td>
+					<td contentEditable=true>&nbsp;</td>
+					<td contentEditable=true>&nbsp;</td>
+					<td contentEditable=true>&nbsp;</td>
+					<td contentEditable=true>&nbsp;</td>
+					<td contentEditable=true>&nbsp;</td>
+					<td class="hasBtn"><button class="mUpRowBtn">🠕</button></td>
+					<td class="hasBtn"><button class="mDoRowBtn">🠗</button></td>
+					<td class="hasBtn"><button class="delRowBtn">-</button></td>
+					<td class="hasBtn"><button class="swpRowBtn">⇅</button></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="hasBtn" colspan=100><button class="addRowBtn">+</button></td>
+					<!-- ugly hack to make button fill cell correctly. needs 
+						another cell with text to get the positioning of button correct-->
+					<td style="background-color: white; border: none" id="invis">&nbsp;</td>
+				</tr>
+			</tfoot>
+		</table>
+		<!--
+		<button id="addTableBtn">+</button>
+		<button id="editModeBtn">Edit Mode</button>
+		<button id="dlOneBtn">Download one log to CSV</button>
+		<button id="dlAllBtn">Download all logs to CSV</button>
+		-->
+		<script src="./index.js"></script>
+	</body>
+</html>
